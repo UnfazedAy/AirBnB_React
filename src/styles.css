@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.App {
+  background: #FFFFFF;
+  width: 550px;
+  height: 870px;
+  border-radius: 9px;
+}
+
+section {
+  padding: 26px;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.identical {
+  display: flex;
+  padding-left: 1em;
+}
