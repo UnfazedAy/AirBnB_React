@@ -8,24 +8,24 @@ export default function MultipleCard () {
     <div className="identical">
       <Card 
         img={athlete}
-        rating="5.0"
-        reviewCount=' (6)'
+        rating={5.0}
+        reviewCount={6}
         location='USA'
         text='Life lessons with Katie Zafers'
         price='136'
       />
       <Card 
         img={bride}
-        rating="5.0 "
-        reviewCount='(30)'
+        rating={5.0}
+        reviewCount={30}
         location='USA'
         text='Life wedding photography'
         price='125'
       />
       <Card 
         img={mountainBike}
-        rating="4.80 "
-        reviewCount='(2)'
+        rating={4.80}
+        reviewCount={2}
         location='USA'
         text='Group mountain biking'
         price='50'

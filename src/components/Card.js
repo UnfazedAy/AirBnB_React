@@ -8,8 +8,8 @@ export default function Card (props) {
     <div className='card-stats'>
       <img src={star} alt='ratings' className='card-star'/>
       <span className="gray"> {props.rating}</span>
-      <span className="gray">{props.reviewCount} • </span>
-      <span className="gray">{props.location}</span>
+      <span className="gray"> ({props.reviewCount}) •</span>
+      <span className="gray"> {props.location}</span>
     </div>
     <p>{props.text}</p>
     <p><span className="bold">From ${props.price}</span> / person</p>
