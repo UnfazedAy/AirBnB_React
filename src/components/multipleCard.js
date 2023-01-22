@@ -11,7 +11,7 @@ export default function MultipleCard () {
         rating={5.0}
         reviewCount={6}
         location='USA'
-        text='Life lessons with Katie Zafers'
+        title='Life lessons with Katie Zafers'
         price='136'
       />
       <Card 
@@ -19,7 +19,7 @@ export default function MultipleCard () {
         rating={5.0}
         reviewCount={30}
         location='USA'
-        text='Life wedding photography'
+        title='Life wedding photography'
         price='125'
       />
       <Card 
@@ -27,7 +27,7 @@ export default function MultipleCard () {
         rating={4.80}
         reviewCount={2}
         location='USA'
-        text='Group mountain biking'
+        title='Group mountain biking'
         price='50'
       />
     </div>
