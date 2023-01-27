@@ -5,12 +5,8 @@ export default function MultipleCard () {
   const datasets = data.map((dataset) => {
     return (
       <Card
-        img={dataset.coverImg}
-        rating={dataset.stats.rating}
-        reviewCount={dataset.stats.reviewCount}
-        location={dataset.location}
-        title={dataset.title}
-        price={dataset.price}
+        key={dataset.id}
+        dataset={dataset}
       />
     )
   });

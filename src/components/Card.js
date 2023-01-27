@@ -2,17 +2,22 @@ import './card.css';
 import star from '../assets/Star.png';
 
 export default function Card (props) {
- return (
+  let badgeText;
+  if (props.dataset.openSpots === 0) badgeText = 'SOLD OUT';
+  else if (props.dataset.location === 'Online') badgeText = 'ONLINE';
+ 
+  return (
   <div className="card">
-    <img src={props.img} alt='An illustration' className='card-img'/>
+    {badgeText && <div className='card-barge'>{badgeText}</div>}
+    <img src={props.dataset.coverImg} alt='An illustration' className='card-img'/>
     <div className='card-stats'>
       <img src={star} alt='ratings' className='card-star'/>
-      <span className="gray"> {props.rating}</span>
-      <span className="gray"> ({props.reviewCount}) •</span>
-      <span className="gray"> {props.location}</span>
+      <span className="gray"> {props.dataset.stats.rating}</span>
+      <span className="gray"> ({props.dataset.stats.reviewCount}) •</span>
+      <span className="gray"> {props.dataset.location}</span>
     </div>
-    <p>{props.title}</p>
-    <p><span className="bold">From ${props.price}</span> / person</p>
+    <p>{props.dataset.title}</p>
+    <p><span className="bold">From ${props.dataset.price}</span> / person</p>
   </div>
  );
 }

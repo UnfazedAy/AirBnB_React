@@ -1,8 +1,10 @@
 .card {
+  position: relative;
   width: 175px;
   font-size: 12px;
   margin-top: 39px;
   margin-right: 18px;
+  overflow: hidden;
 }
 
 .card-img {
@@ -13,4 +15,14 @@
 
 .card-star {
   height: 14px;
+}
+
+.card-barge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
